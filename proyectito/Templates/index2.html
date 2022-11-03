@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE  html>
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <meta  name="viewport"  content="width=device-width, initial-scale=1">
+        <title></title>
+    </head>
+    <body>
+          <h1>HOLA MUNDO y CLASE DE DIU jajajajaj</h1>
+            {% for i in consulta_Estudiante %}
+              <br>
+              {{i.nombres}}
+              <br>
+              {{i.apellidos}}
+              <br>
+              {{i.numCta}}
+              <br>
+            {% endfor %}
+    </body>
+</html>
