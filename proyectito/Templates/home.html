@@ -19,9 +19,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="{% url 'miPrimerApp:UNO' grupo_id=grupo_idVariable %}">Grupo 1</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'miPrimerApp:DOS' grupo_id=grupo_idVariableDos %}">Grupo 2</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">cerrar sesión</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -29,30 +27,12 @@
         <!-- Header-->
         <header class="bg-primary bg-gradient text-white">
             <div class="container px-4 text-center">
-                <h1 class="fw-bolder">Constulta todos los grupos</h1>
-                <a class="btn btn-lg btn-light" href="#about">Start scrolling!</a>
+                <h1 class="fw-bolder">Página principal</h1>
+                <a class="btn btn-lg btn-light" href="{% url 'login' %}">Inicia sesión</a> <br>
+                <a  href="{% url 'miPrimerApp:registro' %}" style="color: white;">Registrate</a>
             </div>
         </header>
-        <!-- About section-->
-        <section id="about">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                      <h1>HOLA MUNDO y CLASE DE DIU jajajajaj</h1>
-                      {% for i in consulta_Estudiante %}
-                        <br>
-                        {{i.nombres}}
-                        <br>
-                        {{i.apellidos}}
-                        <br>
-                        {{i.numCta}}
-                        <br>
-                      {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         
         <!-- Bootstrap core JS-->

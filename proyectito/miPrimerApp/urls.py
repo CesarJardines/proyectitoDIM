@@ -22,7 +22,10 @@ app_name  =  "miPrimerApp"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
-    path('grupoUno/<str:grupo_id>/', views.funcionUno, name='UNO')
+    path('index/', views.index, name='index'),
+    path('grupoUno/<str:grupo_id>/', views.funcionUno, name='UNO'),
+    path('grupoDos/<str:grupo_id>/', views.funcionDos, name='DOS'),
+    path('registro/', views.registro, name='registro'),
+    path('', views.home, name='home'),
 
 ]

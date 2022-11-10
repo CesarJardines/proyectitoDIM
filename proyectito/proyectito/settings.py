@@ -28,6 +28,8 @@ SECRET_KEY = 'django-insecure-lfa0@=kpg$1jr5yo8ux%_z9*9_5^mkx1thmrhxpn*^sxt!9(gl
 DEBUG = True
 
 ALLOWED_HOSTS = []
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = 'miPrimerApp:index'
 
 
 # Application definition
@@ -39,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'miPrimerApp'
+    'miPrimerApp',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -106,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
